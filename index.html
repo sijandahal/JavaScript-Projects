@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strike Rate Calculator</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- <div class="error">
+      <h2>Please Enter all fields</h2>
+    </div> -->
+    <div class="main">
+
+      <h1>StrikeRate Calculator</h1>
+      <form id="form">
+        <div class="form-control">
+          <label for="Ball Faced">Balls Faced</label>
+         <input type="number" name="number" id="ball-faced">
+        </div>
+        <div class="form-control">
+          <label for="Ball Faced">Runs Scored</label>
+         <input type="number" name="number" id="Runs-scored">
+        </div>
+
+         <input type="submit" value="Calculate">  
+      </form>
+    </div>
+    <div class="loading" id = "load">
+      <img src="./img/loading.gif" alt="LoadingGif" class = "loader">
+    </div>
+    <div class="form-control results">
+      <p class = "StrikeRate" id = "StrikeRates">The StrikeRate of a batsman is <span></span></p>
+    </div>
+  </div>
+ <script src="./main.js"></script>
+</body>
+</html>
